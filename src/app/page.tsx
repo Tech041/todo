@@ -108,10 +108,10 @@ const Home = () => {
             {tasks.map((task: any, index: number) => (
               <li
                 key={index}
-                className="flex gap-5 md:gap-[200px] px-4 py-2 my-3 text-white"
+                className="flex gap-10 px-4 py-2 my-3 text-white w-full"
               >
-                {task}
-                <span className="flex gap-3">
+                <span className="w-[70%]">{task}</span>
+                <span className="flex gap-3 w-[30%]">
                   <div className={styles}>
                     <button
                       onClick={() => handleDelete(index)}
